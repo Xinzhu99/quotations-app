@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#ff6e7f,#bfe9ff) ;
+    color: #463434;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    margin: 5px À;
+    text-align: center;
+}
+hr {
+  width: 60%;
+  margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #bebaba;
+    border-radius: 5px;
+    padding : 20px;                          /** distance avec l'extérieur **/
+    gap: 10px;                               /** distance entre chaque élément **/
+    box-shadow:  0 2px 10px rgba(53, 1, 1, 0.1);                                     /*! box shadow : ombrage autour d'un élément !*/
+    font-size: 20px;
+}
+
+input {
+    padding: 8px;                                                                      /** taille de champ texte **/
+    width: 380px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+button{
+    padding: 5px 16px;
+    background-color: #f07e7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: black;
+}
+
+#quoteList {
+  margin-top: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.text {
+  font-style: italic;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 20px;
+  color: #f07e7e;
+}

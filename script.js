@@ -7,12 +7,12 @@ const text = document.querySelector(".text");
 const count = document.querySelector("#count");
 
 let quoteCount = 0;
-let quotes = [{author:"", text:""}];
+let quotes = [{author:"", text:""}];                                   //*je déclare un tableau d'objets
 
-quoteForm.addEventListener("submit", (event) => {                      //"submit" pour écouter submission du formulaire en tant que l'event au lieu d'un clic
+quoteForm.addEventListener("submit", (event) => {                      //!"submit" pour écouter submission du formulaire en tant que l'event au lieu d'un clic
     quotes.push({author:authorInput.value,text:textInput.value});
     
-    event.preventDefault();                                           //je bloque la recharge de page automatique afin d'afficher le quoteList.innertext
+    event.preventDefault();                                           //!je bloque la recharge de page automatique afin d'afficher le quoteList.innertext
     quoteList.innerHTML ="";                                          //avant de recharger le nouveau tableau, je vide mon navigateur
     for (const item of quotes){
         quoteList.innerHTML += 
