@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My quotations</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
     <h1>Mes citations</h1>
@@ -13,19 +15,19 @@
     <!-- hr : ligne de séparation -->
     <hr>
 
-    <form id="formula">
-        <label for="quotation">Quotation text : </label>
-        <input id ="quotation" type="text" name="quotation"><br>
+    <form id="quoteForm">
+        <label for="textInput">Quotation text : </label>
+        <input id ="textInput" type="text" name="textInput"><br>
         
-        <label for="author">Author : </label>
-        <input id ="author" type="text" name ="author"><br>
+        <label for="authorInput">Author : </label>
+        <input id ="authorInput" type="text" name ="authorInput"><br>
         
         <button id="submitBtn">Enregistrer</button>
     </form>
 
-    <div id=""quote-list>
-        <p class="text">On ne naît pas femme, on le devient.</p>
-        <p class ="author">Simone de Beauvoir</p>
+    <div id="quoteList">
+        <p class="text"></p>
+        <p class ="author"></p>
     </div>
     
 </body>
