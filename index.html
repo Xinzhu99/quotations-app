@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My quotations</title>
+    <title>My quotes</title>
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
@@ -11,19 +11,19 @@
     <h1>Mes citations</h1>
     <h2>Gestionnaire de citations en ligne</h2>
     <!-- h3 affiche le nombre de citations enregistrées-->
-    <h3>0 citations</h3>
+    <h3 id="count">0 citations</h3>
     <!-- hr : ligne de séparation -->
     <hr>
 
     <form id="quoteForm">
-        <label for="textInput">Quotation text : </label>
-        <input id ="textInput" type="text" name="textInput"><br>
+        <label>Quotation text : <input id ="textInput" type="text"><br></label>
+        <!-- br sert à "à la ligne"-->
         
-        <label for="authorInput">Author : </label>
-        <input id ="authorInput" type="text" name ="authorInput"><br>
-        
+        <label>Author : <input id ="authorInput" type="text"><br></label> 
+
         <button id="submitBtn">Enregistrer</button>
     </form>
+
 
     <div id="quoteList">
         <p class="text"></p>
